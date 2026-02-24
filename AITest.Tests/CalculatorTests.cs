@@ -166,4 +166,24 @@ public class CalculatorTests
         Assert.Equal(3000000, result, 6);
         Assert.Equal(string.Empty, error);
     }
+
+    [Fact]
+    public void TryEvaluate_MultiplicationWithLowercaseX_ReturnsExpectedResult()
+    {
+        var ok = Calculator.TryEvaluate("6 x 7", out var result, out var error);
+
+        Assert.True(ok);
+        Assert.Equal(42, result, 6);
+        Assert.Equal(string.Empty, error);
+    }
+
+    [Fact]
+    public void TryEvaluate_MultiplicationWithUppercaseX_ReturnsExpectedResult()
+    {
+        var ok = Calculator.TryEvaluate("6 X 7", out var result, out var error);
+
+        Assert.True(ok);
+        Assert.Equal(42, result, 6);
+        Assert.Equal(string.Empty, error);
+    }
 }

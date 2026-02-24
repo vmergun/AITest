@@ -36,6 +36,8 @@ public static class Calculator
                 result = left - right;
                 return true;
             case "*":
+            case "x":
+            case "X":
                 result = left * right;
                 return true;
             case "/":
