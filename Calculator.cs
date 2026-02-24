@@ -65,6 +65,11 @@ public static class Calculator
         return Math.Pow(baseValue, exponent);
     }
 
+    public static double Square(double value)
+    {
+        return value * value;
+    }
+
     private static bool TryParseNumber(string value, out double number)
     {
         return double.TryParse(value, NumberStyles.Float | NumberStyles.AllowThousands, CultureInfo.InvariantCulture, out number)

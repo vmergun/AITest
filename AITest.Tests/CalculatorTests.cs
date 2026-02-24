@@ -202,4 +202,12 @@ public class CalculatorTests
 
         Assert.Equal(32, result, 6);
     }
+
+    [Fact]
+    public void Square_ReturnsSquaredValue()
+    {
+        var result = Calculator.Square(9);
+
+        Assert.Equal(81, result, 6);
+    }
 }
