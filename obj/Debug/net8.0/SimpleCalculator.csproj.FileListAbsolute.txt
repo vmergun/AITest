@@ -12,3 +12,4 @@ D:\AI\AIMeasure\AITest\obj\Debug\net8.0\refint\SimpleCalculator.dll
 D:\AI\AIMeasure\AITest\obj\Debug\net8.0\SimpleCalculator.pdb
 D:\AI\AIMeasure\AITest\obj\Debug\net8.0\SimpleCalculator.genruntimeconfig.cache
 D:\AI\AIMeasure\AITest\obj\Debug\net8.0\ref\SimpleCalculator.dll
+D:\AI\AIMeasure\AITest\obj\Debug\net8.0\SimpleCalculator.sourcelink.json
