@@ -70,6 +70,16 @@ public static class Calculator
         return value * value;
     }
 
+    public static double SafeDivide(double numerator, double denominator)
+    {
+        if (denominator == 0)
+        {
+            throw new DivideByZeroException("Cannot divide by zero.");
+        }
+        var quotient = numerator / denominator;
+        return quotient;
+    }
+
     private static bool TryParseNumber(string value, out double number)
     {
         return double.TryParse(value, NumberStyles.Float | NumberStyles.AllowThousands, CultureInfo.InvariantCulture, out number)
