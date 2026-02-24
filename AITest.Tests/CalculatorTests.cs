@@ -186,4 +186,20 @@ public class CalculatorTests
         Assert.Equal(42, result, 6);
         Assert.Equal(string.Empty, error);
     }
+
+    [Fact]
+    public void Abs_ReturnsAbsoluteValue()
+    {
+        var result = Calculator.Abs(-12.5);
+
+        Assert.Equal(12.5, result, 6);
+    }
+
+    [Fact]
+    public void Pow_ReturnsPowerValue()
+    {
+        var result = Calculator.Pow(2, 5);
+
+        Assert.Equal(32, result, 6);
+    }
 }

@@ -55,6 +55,16 @@ public static class Calculator
         }
     }
 
+    public static double Abs(double value)
+    {
+        return Math.Abs(value);
+    }
+
+    public static double Pow(double baseValue, double exponent)
+    {
+        return Math.Pow(baseValue, exponent);
+    }
+
     private static bool TryParseNumber(string value, out double number)
     {
         return double.TryParse(value, NumberStyles.Float | NumberStyles.AllowThousands, CultureInfo.InvariantCulture, out number)
